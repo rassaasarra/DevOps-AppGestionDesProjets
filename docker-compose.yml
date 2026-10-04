@@ -25,6 +25,7 @@ services:
   backend:
     build: ./backend
     ports:
+      - "8083:8081"
     depends_on:
       - db
     networks:
